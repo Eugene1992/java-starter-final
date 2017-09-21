@@ -2,6 +2,7 @@
 public class ClassWork1 {
     public static void main(String[] args) {
 
+        // From number to binary
         int ourNumber = 125;
 
         int num1 = ourNumber / 2;
@@ -32,13 +33,8 @@ public class ClassWork1 {
         int value7 = num6 % 2;
         System.out.print(value7);
 
-//        int num8 = num7 / 2;
-//        int value8 = num7 % 2;
-//        System.out.print(value8);
-//
-//        int num9 = num8 / 2;
-//        int value9 = num7 % 2;
-//        System.out.print(value9);
+        // from binary to number
+
     }
 
 

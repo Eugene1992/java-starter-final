@@ -1,5 +1,7 @@
-public class First{
-    public static void main(String[]argz){
+package HW01; // TODO: 21.09.2017 rename package name to lowercase
+
+public class First {
+    public static void main(String[] argz) {
 //1
         byte a;
         short b;
@@ -14,29 +16,29 @@ public class First{
 
         System.out.println("3. e = " + e);
 //4
-        int i = 56486/554;
+        int i = 56486 / 554;
 
         System.out.println("4. i = " + i);
 //5
-        long j = 45675*354;
+        long j = 45675 * 354;
 
         System.out.println("5. j = " + j);
 //6
         byte a6 = 5;
         byte b6 = 74;
-        byte c6 = a6 + b6;
+        byte c6 = (byte) (a6 + b6);
 
         System.out.println("6. c = " + c6);
 //7
         short a7 = 67;
         short b7 = 867;
         byte g7 = 5;
-        byte c7 = b7 + a7;
-        c7 = c7/g7;
+        byte c7 = (byte) (b7 + a7);
+        c7 = (byte) (c7 / g7);
 
-        System.out.println("7. c = " + c);
+        System.out.println("7. c = " + c7);
 //8
-        int a8 = (c7/c6)*(b7/a7);
+        int a8 = (c7 / c6) * (b7 / a7);
 
         System.out.println("8. a = " + a8);
 //9
@@ -56,9 +58,9 @@ public class First{
         int y = 485;
 
         System.out.println("10.  x = " + x + " y = " + y);
-        x = x*y;
-        y = x/y;
-        x = x/y;
+        x = x * y;
+        y = x / y;
+        x = x / y;
 
         System.out.println(" x = " + x + " y = " + y);
     }

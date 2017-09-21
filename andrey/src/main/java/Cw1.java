@@ -13,7 +13,7 @@ public class Cw1 {
       a5=x%2;
       x=x/2;
       a6=x%2;
-        x=x/2;
+      
 
         System.out.print(a6);
         System.out.print(a5);

@@ -1,7 +1,7 @@
 /**
  * Created by Student on 9/21/2017.
  */
-public class hw1 {
+public class HomeWork1 {
     public static void main(String[] args) {
         byte a;
         short s;

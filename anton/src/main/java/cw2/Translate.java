@@ -46,5 +46,14 @@ public class Translate {
         b = b / 10;
 
         System.out.println(rez);
+
+        rez = 0;
+        b = 1111111;
+        int i;
+        for (i = 0; i < 7; i++) {
+            rez += (byte) ((b % 10) * (2 ^ i));
+            b = b / 10;
+        }
+        System.out.println(rez);
     }
 }

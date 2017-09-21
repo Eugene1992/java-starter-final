@@ -1,4 +1,4 @@
-public static class{
+public class First{
     public static void main(String[]argz){
 //1
         byte a;
@@ -10,7 +10,7 @@ public static class{
 
         System.out.println("2. e = " + e);
 //3
-        short e = 636 - 353;
+        short e1 = 636 - 353;
 
         System.out.println("3. e = " + e);
 //4
@@ -20,17 +20,19 @@ public static class{
 //5
         long j = 45675*354;
 
-        System.out.println("5. j = " j);
+        System.out.println("5. j = " + j);
 //6
         byte a6 = 5;
         byte b6 = 74;
-        byte c = a6 + b6;
+        byte c6 = a6 + b6;
 
-        System.out.println("6. c = " + c);
+        System.out.println("6. c = " + c6);
 //7
         short a7 = 67;
         short b7 = 867;
-        byte c = 7(b7 + a7)/a6;
+        byte g7 = 5;
+        byte c7 = b7 + a7;
+        c7 = c7/g7;
 
         System.out.println("7. c = " + c);
 //8

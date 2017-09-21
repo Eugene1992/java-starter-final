@@ -1,4 +1,4 @@
-package hw01; // TODO: 21.09.2017 rename package name to lowercase
+package hw01;
 
 public class First {
     public static void main(String[] argz) {

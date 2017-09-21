@@ -1,6 +1,8 @@
 public class HomeWork01 {
     public static void main(String args[]){
+
 //        Создать четыре целочисленные переменные типов byte, short, int, long.
+
         short s;
         byte b;
         int i;
@@ -59,7 +61,7 @@ public class HomeWork01 {
 
         z = (byte) (z + x);
         x = (byte) (z - x);
-        z = (byte) (z- x);
+        z = (byte) (z - x);
 
     }
 }

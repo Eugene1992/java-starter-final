@@ -1,9 +1,7 @@
-/**
- * Created by Student on 9/21/2017.
- */
+
 public class HomeWork1 {
     public static void main(String[] args) {
-        /**
+        /*
          * Создать четыре целочисленные переменные типов byte, short, int, long.
          Инициализировать переменную типа byte результатом суммы двух любых чисел
          Инициализировать переменную типа short результатом вычитания двух любых чисел
@@ -41,13 +39,22 @@ public class HomeWork1 {
         // Передать переменной типа byte результат суммы двух переменных типа byte
         byte numOne = 29;
         byte numTwo = 12;
+
         byte thirdByte = (byte) (numOne + numTwo);
 
         // Переменной типа int передать результат деления двух short, умноженных на результат деления двух byte
+        short shortNomberTwo = 34;
+        int twoShortDivided = (shortNomber / shortNomberTwo) * (thirdByte / a);
 
         // Поменять значения двух целочисленных переменных используя третью
+        int numberIntSecond = 23;
+        int numberIntThird = 100;
+
+        numberIntSecond += numberInt;
+        numberIntThird += numberInt;
 
         // Поменять значения двух переменных без использования третей
-
+        numberIntSecond += 27;
+        numberIntThird += 25;
     }
 }

@@ -11,8 +11,8 @@ public class GuessNumber {
             System.out.println("Guess My Number!");
             Scanner scan = new Scanner(System.in);
             String s = scan.next();
-            if ( s == "exit" ){
-                f = false;
+            if ( s.equals("exit") ){
+                break;
             }
             k++;
 

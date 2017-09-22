@@ -21,7 +21,7 @@ public class Calculator {
         int enteredValueOne = scanner.nextInt();
         System.out.println("Please, enter second number: ");
         int enteredValueTwo = scanner.nextInt();
-        System.out.println("Enter operator, please: ");
+        System.out.println("Enter operator, please ('+', '-', '/' or '*')");
         String enteredOperator = scanner.next();
 
         switch (enteredOperator) {

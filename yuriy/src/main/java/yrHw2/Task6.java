@@ -1,4 +1,5 @@
 package yrHw2;
+
 /**
  * Задание 6
  * В три переменные a, b и c записаны три вещественных числа. Создать программу, которая
@@ -7,6 +8,10 @@ package yrHw2;
  */
 public class Task6 {
     public static void main(String[] args) {
+        int a = 4;
+        int b = 3;
+        int c = 10;
+
 
     }
 }

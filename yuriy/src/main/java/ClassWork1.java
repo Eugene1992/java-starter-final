@@ -1,11 +1,15 @@
 
 public class ClassWork1 {
+
+    /**
+     * За допомогою простих змінних і обчислень перевести десяткове число в двійкове і навпаки
+     */
     public static void main(String[] args) {
 
-        // From number to binary
-        int ourNumber = 125;
+        // From decimal to binary
+        int ourDecimalNumber = 125;
 
-        int num1 = ourNumber / 2;
+        int num1 = ourDecimalNumber / 2;
         int value1 = num1 % 2;
         System.out.print(value1);
 
@@ -33,7 +37,9 @@ public class ClassWork1 {
         int value7 = num6 % 2;
         System.out.print(value7);
 
-        // from binary to number
+        // from binary to decimal
+        int binaryNumber = 1001011;
+
 
     }
 

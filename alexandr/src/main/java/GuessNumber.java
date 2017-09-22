@@ -11,12 +11,14 @@ public class GuessNumber {
             System.out.println("Guess My Number!");
             Scanner scan = new Scanner(System.in);
             String s = scan.next();
+
             if ( s.equals("exit") ){
                 break;
             }
-            k++;
 
+            k++;
             int x = Integer.parseInt(s);
+
             if (x < randomInt) {
                 System.out.println("My Number is bigger!");
             } else if (x > randomInt){

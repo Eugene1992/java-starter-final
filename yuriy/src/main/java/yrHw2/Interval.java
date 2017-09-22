@@ -1,5 +1,7 @@
 package yrHw2;
 
+import java.util.Scanner;
+
 /**
  *  Задание 8
  * Используя IntelliJ IDEA, создайте класс Interval.
@@ -9,4 +11,21 @@ package yrHw2;
  * выводится соответствующее сообщение.
  */
 public class Interval {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a number what will be >= 0:");
+        int newNumber = scanner.nextInt();
+
+        if (newNumber >= 0 && newNumber <= 14){
+            System.out.println("Your number in range [0 - 14]");
+        } else if (newNumber >= 15 && newNumber <= 35){
+            System.out.println("Your number in range [0 - 14]");
+        } else if (newNumber >= 36 && newNumber <= 50){
+            System.out.println("Your number in range [36 - 50]");
+        } else if (newNumber >= 50 && newNumber <= 100){
+            System.out.println("Your number in range [50 - 100]");
+        } else {
+            System.out.println("Can not find your number in range [0 - 100]. Try again, please.");
+        }
+    }
 }

@@ -6,5 +6,7 @@ package yrHw2;
  * либо сообщать, что корней нет.
  */
 public class Task6 {
+    public static void main(String[] args) {
 
+    }
 }

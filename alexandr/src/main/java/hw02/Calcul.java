@@ -26,24 +26,24 @@ public class Calcul {
         System.out.println("Enter second number");
         int y = scan.nextInt();
         switch (actionCalc) {
-            case "+" :
-                System.out.println("Sum: " + (x + y) );
+            case "+":
+                System.out.println("Sum: " + (x + y));
                 break;
-            case "-" :
-                System.out.println("Dif: " + (x - y) );
+            case "-":
+                System.out.println("Dif: " + (x - y));
                 break;
-            case "*" :
-                System.out.println("Mult: " + (x * y) );
+            case "*":
+                System.out.println("Mult: " + (x * y));
                 break;
-            case "/" :
+            case "/":
                 if (y == 0) {
                     System.out.println("Division by zero");
                 } else {
-                    System.out.println("Div: " + (x / y) );
+                    System.out.println("Div: " + (x / y));
                 }
                 break;
-            case "%" :
-                System.out.println("%%%: " + (x % y) );
+            case "%":
+                System.out.println("%%%: " + (x % y));
                 break;
         }
 

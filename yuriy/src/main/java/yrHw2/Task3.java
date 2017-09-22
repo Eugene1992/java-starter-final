@@ -19,7 +19,5 @@ public class Task3 {
         double valueFromConsoleTwo = scanner.nextDouble();
 
 
-
-
     }
 }

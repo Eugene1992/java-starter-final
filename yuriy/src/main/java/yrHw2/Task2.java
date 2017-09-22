@@ -19,7 +19,6 @@ public class Task2 {
             System.out.println("Value is not even");
         } else {
             System.out.println("Value is even");
-
         }
     }
 }

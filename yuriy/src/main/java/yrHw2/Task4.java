@@ -17,11 +17,9 @@ public class Task4 {
 //        System.out.println("Please, enter number three: ");
 //        int valueNumberThree = scanner.nextInt();
 
-
         int valueNumberOne = 23;
         int valueNumberTwo = 39;
         int valueNumberThree = 4;
-
 
         if (valueNumberOne > valueNumberTwo && valueNumberOne > valueNumberThree) {
             System.out.println(valueNumberOne);

@@ -10,7 +10,7 @@ public class Task5 {
         int valueNumberOne = 23;
         int valueNumberThree = 4;
         int valueNumberFour = 345;
-        int valueNumberFive = 344;
+        int valueNumberTwo = 344;
 
 
 

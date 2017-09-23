@@ -1,4 +1,4 @@
-package yrHw2;
+package hw2;
 
 /**
  * Задание 6

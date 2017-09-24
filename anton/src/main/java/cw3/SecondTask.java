@@ -31,6 +31,5 @@ public class SecondTask {
         if (win == false) {
             System.out.println("You lose, my number was " + randInt);
         }
-
     }
 }

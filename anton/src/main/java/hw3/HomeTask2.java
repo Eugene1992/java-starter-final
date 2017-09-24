@@ -2,7 +2,7 @@ package hw3;
 
 import java.util.Scanner;
 
-public class Task {
+public class HomeTask2 {
     public static void main(String[] args) {
         int n = 10000;
         int firstValue = 1000;

@@ -7,7 +7,8 @@ public class Task {
         int n = 10000;
         int firstValue = 1000;
 
-//1
+//1     Создайте программу, выводящую на экран все четырёхзначные
+//      числа последовательности 1000 1003 1006 1009 1012 1015 ….
 
         System.out.println("1 Task");
 
@@ -19,7 +20,8 @@ public class Task {
             System.out.print(firstValue + " ");
         }
 
-//2
+//2     Создайте программу, выводящую на экран первые 55
+//      элементов последовательности 1 3 5 7 9 11 13 15 17 ….
 
 
         System.out.println("");
@@ -32,7 +34,8 @@ public class Task {
             firstValue += 2;
         }
 
-//3
+//3     Создайте программу, выводящую на экран первые 55
+//      элементов последовательности 1 3 5 7 9 11 13 15 17 ….
 
         System.out.println("");
         System.out.println("3 Task");
@@ -47,7 +50,8 @@ public class Task {
             }
         }
 
-//4
+//4     Создайте программу, выводящую на экран первые 20
+//      элементов последовательности 2 4 8 16 32 64 128 ….
 
         System.out.println("");
         System.out.println("4 Task");
@@ -59,7 +63,8 @@ public class Task {
             firstValue *= 2;
         }
 
-//5
+//5     Выведите на экран первые 20 членов последовательности
+//      Фибоначчи.
 
         System.out.println("");
         System.out.println("5 Task");
@@ -76,7 +81,8 @@ public class Task {
             thirdValue = firstValue;
         }
 
-//7
+//7     Создайте программу, вычисляющую факториал
+//      натурального числа n, введенного пользователем.
 
         System.out.println("");
         System.out.println("7 Task");
@@ -94,20 +100,19 @@ public class Task {
             }
         }
 
-//8
+//8     Выведите на экран все положительные делители
+//      натурального числа, введенного пользователем.
 
         System.out.println("");
         System.out.println("8 Task");
 
         firstValue = scan.nextInt();
-//        n = 1;
+
         if (firstValue <= 0) {
             System.out.println("Invalid value");
         } else {
             for (int i = 1; i < firstValue + 1; i++) {
-//                n *= i;
-                if (firstValue%i==0)
-                {
+                if (firstValue % i == 0) {
                     System.out.print(i + " ");
                 }
             }

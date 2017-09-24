@@ -1,6 +1,6 @@
-package yrHw1;
+package hw1;
 
-public class YrHomeWork1 {
+public class HomeWork1 {
     public static void main(String[] args) {
         /**
          * Создать четыре целочисленные переменные типов byte, short, int, long.

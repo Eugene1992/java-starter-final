@@ -54,7 +54,7 @@ public class HomeWork02 {
         int g = scan.nextInt();
         System.out.println("Enter number from keyboard");
         int h = scan.nextInt();
-        if ( Math.abs(g - 10) > Math.abs(h - 10) ) {
+        if (Math.abs(g - 10) > Math.abs(h - 10)) {
             System.out.println("This number is closer to 10" + h);
         } else if (Math.abs(g - 10) < Math.abs(h - 10)) {
             System.out.println("This number is closer to 10" + g);
@@ -71,7 +71,7 @@ public class HomeWork02 {
         int k = 15;
         int l = 23;
         int m = 8;
-        if ( (k > m) && (k > l) ) {
+        if ((k > m) && (k > l)) {
             System.out.println("This number is bigger" + k);
         } else if ((l > m) && (l > k)) {
             System.out.println("This number is bigger" + l);
@@ -89,11 +89,11 @@ public class HomeWork02 {
         int a3 = 22;
         int a4 = 9;
         int max;
-        if ( ((a1 > a2) && (a1 > a3)) || ((a1 > a2) && (a1 > a4)) || ((a1 > a3) && (a1 > a4)) ) {
+        if (((a1 > a2) && (a1 > a3)) || ((a1 > a2) && (a1 > a4)) || ((a1 > a3) && (a1 > a4))) {
             max = a1;
-        } else if ( ((a2 > a1) && (a2 > a3)) || ((a2 > a1) && (a2 > a4)) || ((a2 > a3) && (a2 > a4)) ) {
+        } else if (((a2 > a1) && (a2 > a3)) || ((a2 > a1) && (a2 > a4)) || ((a2 > a3) && (a2 > a4))) {
             max = a2;
-        } else if ( ((a3 > a1) && (a3 > a2)) || ((a3 > a1) && (a3 > a4)) || ((a3 > a2) && (a3 > a4)) ) {
+        } else if (((a3 > a1) && (a3 > a2)) || ((a3 > a1) && (a3 > a4)) || ((a3 > a2) && (a3 > a4))) {
             max = a3;
         } else {
             max = a4;
@@ -110,10 +110,10 @@ public class HomeWork02 {
         double a = 3;
         double b = 5;
         double c = 7;
-        double d = b * b - 4*a*c;
+        double d = b * b - 4 * a * c;
         if (d >= 0) {
-            double x1 = (-b + Math.sqrt(d))/2*a;
-            double x2 = (-b - Math.sqrt(d))/2*a;
+            double x1 = (-b + Math.sqrt(d)) / 2 * a;
+            double x2 = (-b - Math.sqrt(d)) / 2 * a;
             System.out.print("Solution's :" + x1);
             System.out.println("," + x2);
         } else {

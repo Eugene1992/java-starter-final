@@ -1,4 +1,4 @@
-package yrHw2;
+package hw2;
 
 import java.util.Scanner;
 
@@ -17,8 +17,6 @@ public class Task3 {
         double valueFromConsoleOne = scanner.nextDouble();
         System.out.println("Please, enter number two: ");
         double valueFromConsoleTwo = scanner.nextDouble();
-
-
 
 
     }

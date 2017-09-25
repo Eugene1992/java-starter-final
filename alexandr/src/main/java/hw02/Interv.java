@@ -17,13 +17,13 @@ public class Interv {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter number from 0 to 100");
         int x = scan.nextInt();
-        if ( (x >= 0) && (x <= 14) ){
+        if ((x >= 0) && (x <= 14)) {
             System.out.println("number from 0 to 14");
-        } else if ( (x >=15) && (x <= 35) ){
+        } else if ((x >= 15) && (x <= 35)) {
             System.out.println("number from 15 to 35");
-        }  else if ( (x >= 36) && (x <= 50) ){
+        } else if ((x >= 36) && (x <= 50)) {
             System.out.println("number from 36 to 50");
-        } else if ( (x >= 51) && (x <= 100) ){
+        } else if ((x >= 51) && (x <= 100)) {
             System.out.println("number from 50 to 100");
         } else {
             System.out.println("Out of 1 .. 100");

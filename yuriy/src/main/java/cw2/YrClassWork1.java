@@ -1,3 +1,4 @@
+package cw2;
 
 public class YrClassWork1 {
 
@@ -42,7 +43,6 @@ public class YrClassWork1 {
 
 
     }
-
 
 
 }

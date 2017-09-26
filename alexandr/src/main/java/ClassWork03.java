@@ -8,6 +8,7 @@ public class ClassWork03 {
         System.out.println("Enter the ending of interval");
         int endOfInterval = scan.nextInt();
         System.out.println(sumOfInterval(beginOfInterval,endOfInterval));
+
     }
 
     static int sumOfInterval (int startInterval, int endInterval) {
@@ -17,4 +18,5 @@ public class ClassWork03 {
         }
         return sum;
     }
+
 }

@@ -3,20 +3,20 @@ package hw3;
 import java.util.Scanner;
 
 public class HomeWork3 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         System.out.println("1. Создайте программу, выводящую на экран все четырёхзначные числа последовательности 1000 1003 1006 1009 1012 1015 ….");
-        for(int i = 1000; i <= 9999; i += 3){
+        for (int i = 1000; i <= 9999; i += 3) {
             System.out.println(i);
         }
 
         System.out.println("2. Создайте программу, выводящую на экран первые 55 элементов последовательности 1 3 5 7 9 11 13 15 17 ….");
-        for(int a = 1; a <= 55; a++){
+        for (int a = 1; a <= 55; a++) {
             System.out.println(a);
         }
 
         System.out.println("3. Создайте программу, выводящую на экран все неотрицательные элементы последовательности 90 85 80 75 70 65 60 ….");
-        for(int b = 90; b >= 0; b -= 5){
+        for (int b = 90; b >= 0; b -= 5) {
             System.out.println(b);
         }
 
@@ -24,7 +24,7 @@ public class HomeWork3 {
         int valueHw3Task4 = 2;
         System.out.println(valueHw3Task4);
 
-        for(int c = 0; c <= 20; c++){
+        for (int c = 0; c <= 20; c++) {
             valueHw3Task4 = valueHw3Task4 * 2;
             System.out.println(valueHw3Task4);
         }
@@ -37,7 +37,7 @@ public class HomeWork3 {
         System.out.println(previousNumber);
         System.out.println(nextNumber);
 
-        for(int i = 2; i < fibonacciNumberCount; i++){
+        for (int i = 2; i < fibonacciNumberCount; i++) {
             int fibonacciNumber = previousNumber + nextNumber;
 
             System.out.println(fibonacciNumber);
@@ -67,27 +67,26 @@ public class HomeWork3 {
         int number2or8or16 = scanner.nextInt();
 
 //        while(value45 != 0){
-            switch(number2or8or16){
-                case 2:
+        switch (number2or8or16) {
+            case 2:
 //                    String fromIntToBinary = Integer.toBinaryString(userInput);
 //                    System.out.println(fromIntToBinary);
-                    String binaryNumber = "";
-                    while (userInput > 0) {
-                        int rem = userInput % 2;
-                        binaryNumber = rem + binaryNumber;
-                        userInput = userInput / 2;
-                    }
+                String binaryNumber = "";
+                while (userInput > 0) {
+                    int rem = userInput % 2;
+                    binaryNumber = rem + binaryNumber;
+                    userInput = userInput / 2;
+                }
+                System.out.println(binaryNumber);
+                break;
+            case 8:
+                String fromIntToOctogonal = Integer.toOctalString(userInput);
+                System.out.println(fromIntToOctogonal);
 
-                    System.out.println(binaryNumber);
-                    break;
-                case 8:
-                    String fromIntToOctogonal = Integer.toOctalString(userInput);
-                    System.out.println(fromIntToOctogonal);
-
-                    break;
-                case 16:
-                    String fromIntToHexaggonal = Integer.toHexString(userInput).toUpperCase();
-                    System.out.println(fromIntToHexaggonal);
+                break;
+            case 16:
+                String fromIntToHexaggonal = Integer.toHexString(userInput).toUpperCase();
+                System.out.println(fromIntToHexaggonal);
 
 //                    String digits = "0123456789ABCDEF";
 //                    String hexagonalNumber = "";
@@ -97,10 +96,11 @@ public class HomeWork3 {
 //                        hexagonalNumber = digits.charAt(digit) + hexagonalNumber;
 //                        userInput = userInput / 16;
 //                    }
-                    break;
-                default:
-                    System.out.println("Please, enter a numbeber");
-            }
+//                    System.out.println("hexagonalNumber");
+                break;
+            default:
+                System.out.println("Please, enter a numbeber");
+        }
 
         if (userInput == 0) {
             System.out.println("Sorry, you enter 0.");
@@ -108,21 +108,22 @@ public class HomeWork3 {
 //        }
 
         /**
-         * 7. Создайте программу, вычисляющую факториал натурального числа n, введенного пользователем.
+         * 7. Создайте программу, вычисляющую факториал натурального числа factorialValue, введенного пользователем.
          Выведите на экран все положительные делители натурального числа, введенного пользователем.
          */
         System.out.println("Enter decimal number (example: '1', '345', '45')");
         long userInput7 = scanner.nextLong();
-        long n = 1;
+        long factorialValue = 1;
 
-        if(userInput7 < 0){
+        if (userInput7 < 0) {
             System.out.println("Number can not be 0.");
         } else {
-            for (long i = 1; i <= userInput7; i++){
-                n *= i;
+            for (long i = 1; i <= userInput7; i++) {
+                factorialValue *= i;
             }
-            System.out.println(n);
+            System.out.println(factorialValue);
         }
+
 
     }
 }

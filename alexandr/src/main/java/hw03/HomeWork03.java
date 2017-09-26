@@ -8,7 +8,7 @@ public class HomeWork03 {
 
         System.out.println("Четырёхзначные числа последовательности 1000 1003 1006 1009 1012 1015 ….");
         int k = 1;
-        for (int i=1000; i<=9999; i+=3) {
+        for (int i = 1000; i <= 9999; i += 3) {
             System.out.print(i + " ");
             if (k % 25 == 0) {
                 System.out.println("");
@@ -23,13 +23,15 @@ public class HomeWork03 {
         System.out.println("");
         System.out.println("Первые 55 элементов последовательности 1 3 5 7 9 11 13 15 17 ….");
         k = 1;
-        for (int i=1; i<=1000; i+=2) {
+        for (int i = 1; i <= 1000; i += 2) {
             System.out.print(i + " ");
             if (k % 45 == 0) {
                 System.out.println("");
             }
             k++;
-            if (k == 55) { break; }
+            if (k == 55) {
+                break;
+            }
         }
 
         /*
@@ -41,7 +43,7 @@ public class HomeWork03 {
         int x = 90;
         while (x > 0) {
             System.out.print(x + " ");
-            x-=5;
+            x -= 5;
         }
 
         /*
@@ -52,7 +54,7 @@ public class HomeWork03 {
         System.out.println("Первые 20 элементов последовательности 2 4 8 16 32 64 128 ….");
         int y = 1;
         while (y <= 20) {
-            System.out.print(Math.pow(2,y) + " ");
+            System.out.print(Math.pow(2, y) + " ");
             y++;
         }
 
@@ -65,7 +67,7 @@ public class HomeWork03 {
         int n = 1;
         int m = 1;
         System.out.print(m + " " + n + " ");
-        for (int i = 1; i <=18; i++) {
+        for (int i = 1; i <= 18; i++) {
             int l = n + m;
             n = m;
             m = l;

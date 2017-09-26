@@ -18,6 +18,5 @@ public class DividerTest {
                 System.out.print(i + " ");
             }
         }
-
     }
 }

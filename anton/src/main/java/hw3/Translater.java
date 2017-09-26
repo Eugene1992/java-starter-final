@@ -33,7 +33,6 @@ public class Translater {
         String s = "";
         int n = 40;
         byte roz;
-        int val = 2;
         int quadro = 4;
 
         switch (j) {

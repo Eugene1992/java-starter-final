@@ -11,9 +11,9 @@ public class Calculator {
         z = scan.nextDouble();
         System.out.println("Enter operation  + - * /:");
         String act = scan.next();
-     /*     if (act != "/" || act != "*" || act != "-" || act != "+") {
+          if (!act.equals("/") || act != "*" || act != "-" || act != "+") {
           System.out.println("It is not operation");
-    }*/
+    }
         switch(act)
 
     {

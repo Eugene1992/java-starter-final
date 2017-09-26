@@ -13,8 +13,5 @@ public class T01 {
             y = y + 3;
             i--;
         }
-
-
     }
-
 }

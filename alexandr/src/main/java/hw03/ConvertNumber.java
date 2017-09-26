@@ -26,19 +26,17 @@ public class ConvertNumber {
         String s = "";
 
         System.out.println("Converting result:");
-        if ( y == 2 || y == 8) {
-
+        if (y == 2 || y == 8) {
             while (x != 0) {
                 s = x % y + s;
                 x = x / y;
             }
-
         }
 
-        if ( y == 16) {
+        if (y == 16) {
 
             while (x != 0) {
-                switch ( x % y ) {
+                switch (x % y) {
                     case 10:
                         s = "A" + s;
                         x = x / y;
@@ -67,11 +65,8 @@ public class ConvertNumber {
                         s = x % y + s;
                         x = x / y;
                 }
-
-                }
             }
-
+        }
         System.out.println(s);
-
     }
 }

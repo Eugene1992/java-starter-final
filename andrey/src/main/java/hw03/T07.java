@@ -14,6 +14,5 @@ public class T07 {
             y++;
             System.out.println(x);
         }
-
     }
 }

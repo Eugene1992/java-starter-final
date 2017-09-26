@@ -32,7 +32,7 @@ public class Interval {
         if (value >= 36 && value <= 50) {
             System.out.println("Diapasone is [36 - 50]");
         }
-        if (value >=     51 && value <= 100) {
+        if (value >= 51 && value <= 100) {
             System.out.println("Diapasone is [51 - 100]");
         }
     }

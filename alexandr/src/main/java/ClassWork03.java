@@ -12,7 +12,7 @@ public class ClassWork03 {
 
     static int sumOfInterval (int startInterval, int endInterval) {
         int sum = 0;
-        for (int i = startInterval; i < endInterval; i++) {
+        for (int i = startInterval; i <= endInterval; i++) {
            sum+=i; 
         }
         return sum;

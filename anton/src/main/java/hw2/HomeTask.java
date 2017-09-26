@@ -1,4 +1,4 @@
-package hw2; // TODO: 24.09.2017  
+package hw2;
 
 import java.util.Scanner;
 

@@ -15,6 +15,10 @@ public class Task2 {
         System.out.println("Please, enter number: ");
         int valueFromConsoleOne = scanner.nextInt();
 
+        isValueEven(valueFromConsoleOne);
+    }
+
+    private static void isValueEven(int valueFromConsoleOne) {
         if ((valueFromConsoleOne % 2) > 0) {
             System.out.println("Value is not even");
         } else {

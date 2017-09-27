@@ -15,6 +15,7 @@ import java.util.Scanner;
  * <p>
  */
 public class Calculator {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please, enter first number: ");
@@ -24,6 +25,10 @@ public class Calculator {
         System.out.println("Enter operator, please ( '+', '-', '/' or '*' )");
         String enteredOperator = scanner.next();
 
+        calcUserEntries(enteredValueOne, enteredValueTwo, enteredOperator);
+    }
+
+    private static void calcUserEntries(int enteredValueOne, int enteredValueTwo, String enteredOperator) {
         switch (enteredOperator) {
             case "+":
                 System.out.println(enteredValueOne + enteredValueTwo);

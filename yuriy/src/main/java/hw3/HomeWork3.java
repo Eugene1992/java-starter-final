@@ -3,23 +3,29 @@ package hw3;
 import java.util.Scanner;
 
 public class HomeWork3 {
-    public static void main(String[] args) {
 
-        System.out.println("1. Создайте программу, выводящую на экран все четырёхзначные числа последовательности 1000 1003 1006 1009 1012 1015 ….");
+    private static void allNumbersinFourPoints() {
+//        System.out.println("1. Создайте программу, выводящую на экран все четырёхзначные числа последовательности 1000 1003 1006 1009 1012 1015 ….");
         for (int i = 1000; i <= 9999; i += 3) {
             System.out.println(i);
         }
+    }
 
-        System.out.println("2. Создайте программу, выводящую на экран первые 55 элементов последовательности 1 3 5 7 9 11 13 15 17 ….");
+    private static void first55elements() {
+//        System.out.println("2. Создайте программу, выводящую на экран первые 55 элементов последовательности 1 3 5 7 9 11 13 15 17 ….");
         for (int a = 1; a <= 55; a++) {
             System.out.println(a);
         }
+    }
 
-        System.out.println("3. Создайте программу, выводящую на экран все неотрицательные элементы последовательности 90 85 80 75 70 65 60 ….");
+    private static void allpositiveValues() {
+//        System.out.println("3. Создайте программу, выводящую на экран все неотрицательные элементы последовательности 90 85 80 75 70 65 60 ….");
         for (int b = 90; b >= 0; b -= 5) {
             System.out.println(b);
         }
+    }
 
+    private static void first20values() {
         System.out.println("4. Создайте программу, выводящую на экран первые 20 элементов последовательности 2 4 8 16 32 64 128 ….");
         int valueHw3Task4 = 2;
         System.out.println(valueHw3Task4);
@@ -28,8 +34,10 @@ public class HomeWork3 {
             valueHw3Task4 = valueHw3Task4 * 2;
             System.out.println(valueHw3Task4);
         }
+    }
 
-        System.out.println("5. Выведите на экран первые 20 членов последовательности Фибоначчи.");
+    private static void first20fromFibonachi() {
+//        System.out.println("5. Выведите на экран первые 20 членов последовательности Фибоначчи.");
         int fibonacciNumberCount = 20;
         int previousNumber = 0;
         int nextNumber = 1;
@@ -39,13 +47,13 @@ public class HomeWork3 {
 
         for (int i = 2; i < fibonacciNumberCount; i++) {
             int fibonacciNumber = previousNumber + nextNumber;
-
             System.out.println(fibonacciNumber);
-
             previousNumber = nextNumber;
             nextNumber = fibonacciNumber;
         }
+    }
 
+    private static void task6() {
         /**
          *6. Написать программу, которая реализует следующий функционал:
          6.1 Пользователь вводит число в 10-ой системе счисления.
@@ -106,11 +114,14 @@ public class HomeWork3 {
             System.out.println("Sorry, you enter 0.");
         }
 //        }
+    }
 
+    private static void task7() {
         /**
          * 7. Создайте программу, вычисляющую факториал натурального числа factorialValue, введенного пользователем.
          Выведите на экран все положительные делители натурального числа, введенного пользователем.
          */
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter decimal number (example: '1', '345', '45')");
         long userInput7 = scanner.nextLong();
         long factorialValue = 1;
@@ -123,7 +134,30 @@ public class HomeWork3 {
             }
             System.out.println(factorialValue);
         }
+    }
 
 
+    public static void main(String[] args) {
+
+        System.out.println("1. Создайте программу, выводящую на экран все четырёхзначные числа последовательности 1000 1003 1006 1009 1012 1015 ….");
+        allNumbersinFourPoints();
+
+        System.out.println("2. Создайте программу, выводящую на экран первые 55 элементов последовательности 1 3 5 7 9 11 13 15 17 ….");
+        first55elements();
+
+        System.out.println("3. Создайте программу, выводящую на экран все неотрицательные элементы последовательности 90 85 80 75 70 65 60 ….");
+        allpositiveValues();
+
+        System.out.println("4. Создайте программу, выводящую на экран первые 20 элементов последовательности 2 4 8 16 32 64 128 ….");
+        first20values();
+
+        System.out.println("5. Выведите на экран первые 20 членов последовательности Фибоначчи.");
+        first20fromFibonachi();
+
+        System.out.println("Task6");
+        task6();
+
+        System.out.println("Task7");
+        task7();
     }
 }

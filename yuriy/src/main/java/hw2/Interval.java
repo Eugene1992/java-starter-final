@@ -15,7 +15,10 @@ public class Interval {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a number what will be >= 0:");
         int newNumber = scanner.nextInt();
+        calcInterval(newNumber);
+    }
 
+    private static void calcInterval(int newNumber) {
         if (newNumber >= 0 && newNumber <= 14) {
             System.out.println("Your number in range [0 - 14]");
         } else if (newNumber >= 15 && newNumber <= 35) {

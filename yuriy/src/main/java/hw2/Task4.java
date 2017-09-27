@@ -9,7 +9,6 @@ public class Task4 {
     public static void main(String[] args) {
 
 //        Scanner scanner = new Scanner(System.in);
-//
 //        System.out.println("Please, enter number one: ");
 //        int valueNumberOne = scanner.nextInt();
 //        System.out.println("Please, enter number two: ");
@@ -21,6 +20,10 @@ public class Task4 {
         int valueNumberTwo = 39;
         int valueNumberThree = 4;
 
+        maxValue(valueNumberOne, valueNumberTwo, valueNumberThree);
+    }
+
+    private static void maxValue(int valueNumberOne, int valueNumberTwo, int valueNumberThree) {
         if (valueNumberOne > valueNumberTwo && valueNumberOne > valueNumberThree) {
             System.out.println(valueNumberOne);
         } else if (valueNumberTwo > valueNumberOne && valueNumberTwo > valueNumberThree) {

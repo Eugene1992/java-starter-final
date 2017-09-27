@@ -56,7 +56,7 @@ public class HwTask {
         int n = 10;
         for (int i = 0; i <= 2; i++) {
             if (i == 2) {
-                n = 5;
+                n = 4;
             }
             for (int j = 0; j < n; j++) {
                 for (int k = 0; k < 6; k++) {

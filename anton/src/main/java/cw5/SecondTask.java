@@ -8,24 +8,24 @@ public class SecondTask {
 
         Scanner scan = new Scanner(System.in);
         System.out.println("Please print [n][m]:");
-//        int n = scan.nextInt();
-//        int m = scan.nextInt();
-//        int[][] array = new int[n][m];
-        int[][] arr ={
-                {1,2,3,4},
-                {1,2,3,4},
-                {1,2,3,4},
-        };
+        int n = scan.nextInt();
+        int m = scan.nextInt();
+        int[][] array = new int[n][m];
+//        int[][] arr ={
+//                {1,1,1,1},
+//                {1,2,3,1},
+//                {1,1,1,1},
+//        };
 
-//        Random randGen = new Random();
-//        for (int i = 0; i < array.length; i++) {
-//            for (int j = 0; j < array[i].length; j++) {
-//                array[i][j] = randGen.nextInt();
-//            }
-//        }
+        Random randGen = new Random();
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                array[i][j] = randGen.nextInt();
+            }
+        }
 
-        printArray(arr);
-        System.out.println(sum(arr));
+        printArray(array);
+        System.out.println(sum(array));
 
     }
 
@@ -53,8 +53,8 @@ public class SecondTask {
         int step;
         int sum = 0;
         for (int i = 0; i < array.length; i++) {
-            if (i == 0 || i == array.length - 1) {
-                step = array.length - 1;
+            if (i != 0 && i != array.length - 1) {
+                step = array[i].length - 1;
             } else {
                 step = 1;
             }

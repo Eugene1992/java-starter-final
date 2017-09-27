@@ -1,4 +1,4 @@
-package cw4;
+package cw4and5;
 
 import java.util.Scanner;
 

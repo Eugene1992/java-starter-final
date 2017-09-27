@@ -1,4 +1,4 @@
-package cw4;
+package cw4and5;
 
 public class SeconTaskPolindrome {
     public static void main(String[] args) {

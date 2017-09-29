@@ -2,10 +2,11 @@ public class ClassWork05 {
 
     public static void main(String[] args) {
         String testString = "Hello World!";
-        String testString2 = "Hello world!";
+        String testString2 = "Hello World!";
 //        System.out.println(substringMyVersion(testString, 2,5));
+//        System.out.println(equalsStringMyVersion(testString, testString2));
+        System.out.println(startWithMyVersion(testString,"l",4));
 
-        System.out.println(equalsStringMyVersion(testString, testString2));
     }
 
     static String substringMyVersion(String string, int startPosition){
@@ -29,21 +30,35 @@ public class ClassWork05 {
     static boolean equalsStringMyVersion(String firstString, String secondString){
         char[] firstCharArray = firstString.toCharArray();
         char[] secondCharArray = secondString.toCharArray();
-        boolean equals = false;
         if (firstCharArray.length != secondCharArray.length){
-            equals = false;
+            return false;
         } else {
             for (int i = 0; i < firstCharArray.length; i++) {
-                if (firstCharArray[i] == secondCharArray[i]){
-                    equals = true;
-                } else {
-                    equals = false;
-                    break;
+                if (firstCharArray[i] != secondCharArray[i]){
+                    return false;
                 }
             }
         }
 
-        return equals;
+        return true;
+    }
+
+    static boolean startWithMyVersion(String string, String prefix, int position){
+        char[] stringArray = string.toCharArray();
+        char[] prefixArray = prefix.toCharArray();
+        if (position >= stringArray.length || (prefixArray.length + position >= stringArray.length)){
+            return false;
+        }
+        for (int i = position, j = 0; j < prefixArray.length; i++, j++) {
+            if (stringArray[i] != prefixArray[j]) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    static boolean startWithMyVersion(String string, String prefix){
+        return startWithMyVersion(string, prefix, 0);
     }
 
 }

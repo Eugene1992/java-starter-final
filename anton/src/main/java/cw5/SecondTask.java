@@ -66,4 +66,25 @@ public class SecondTask {
         return sum;
     }
 
+    static int counterOfSimple ( int[] arr) {
+        int counter = 0;
+        int value=0;
+        boolean flag = false ;
+        for (int i = 0; i < arr.length; i++){
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[i] == arr[j]) {
+                    if (!flag) {
+                        flag = true;
+                        value = arr[i];
+                    }
+                    if (flag) {
+                        arr[j] = value;
+                    }
+                    counter++;
+                }
+            }
+        }
+        return counter;
+    }
+
 }

@@ -2,7 +2,10 @@ public class ClassWork05 {
 
     public static void main(String[] args) {
         String testString = "Hello World!";
-        System.out.println(substringMyVersion(testString, 2,5));
+        String testString2 = "Hello world!";
+//        System.out.println(substringMyVersion(testString, 2,5));
+
+        System.out.println(equalsStringMyVersion(testString, testString2));
     }
 
     static String substringMyVersion(String string, int startPosition){
@@ -22,4 +25,25 @@ public class ClassWork05 {
         }
         return outPutString;
     }
+
+    static boolean equalsStringMyVersion(String firstString, String secondString){
+        char[] firstCharArray = firstString.toCharArray();
+        char[] secondCharArray = secondString.toCharArray();
+        boolean equals = false;
+        if (firstCharArray.length != secondCharArray.length){
+            equals = false;
+        } else {
+            for (int i = 0; i < firstCharArray.length; i++) {
+                if (firstCharArray[i] == secondCharArray[i]){
+                    equals = true;
+                } else {
+                    equals = false;
+                    break;
+                }
+            }
+        }
+
+        return equals;
+    }
+
 }

@@ -1,8 +1,6 @@
 package hw5;
 
 /**
- * Вывести в консоль все парные числа одномерного массива.
- Вывести все числа одномерного массива в обратном порядке.
  Вывести первую и вторую половину одномерного массива.
  Вывести первую и вторую половину одномерного массива в обратном порядке.
  Найти сумму всех элементов в массиве.
@@ -24,12 +22,32 @@ package hw5;
 
 public class Hw5 {
     public static void main(String[] args) {
+        int[] intArray = {2, 3, 5, 6, 7, 345, 436, 346, 78, 90, 6, 888, 345, 345};
+
+        System.out.println("Вывести в консоль все парные числа одномерного массива.");
+//        allDoNotEvenNumber(intArray);
+
+        System.out.println("Вывести все числа одномерного массива в обратном порядке.");
+        reversePrint(intArray);
+
 
     }
 
     // Вывести в консоль все парные числа одномерного массива.
-    protected static void allDoNot(){
+    protected static void allDoNotEvenNumber(int[] array){
+        System.out.println("Enum numbers");
+        for (int number: array) {
+            if (number % 2 == 0){
+                System.out.println(" " + number);
+            }
+        }
+    }
 
+    // Вывести все числа одномерного массива в обратном порядке.
+    protected static void reversePrint(int[] array){
+        for (int i = array.length; i >= 0 ; i--) {
+            System.out.println(array[i]);
+        }
     }
 
 }

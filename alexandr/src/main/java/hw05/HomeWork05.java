@@ -197,6 +197,16 @@ public class HomeWork05 {
     Инвертировать массив.
     */
 
+    static int revertingMassive(int[] array){
+        int k = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] < 0){
+                array[i] = 0;
+            }
+        }
+        return k;
+    }
+
     /*
     Вывести в консоль половину массива, среднеарифметическое которых является большим.
     */

@@ -304,8 +304,8 @@ public class Hw5 {
 
         // SUMM of all between Max Amd Min
         for (int i = 0; i < array.length; i++) {
-            if (array)
-                summOfElementsBetweenMaxAndMin += array[i];
+          //  if (array)
+           //     summOfElementsBetweenMaxAndMin += array[i];
             }
     }
 

@@ -9,7 +9,18 @@ public class HumanUtil {
                 richest = humans[i];
             }
         }
-        richest.salary = 10;
+
+        return richest;
+    }
+
+    public Human getOldestEmployee(Human[] humans) {
+        Human richest = humans[0];
+        for (int i = 1; i < humans.length; i++) {
+            if (richest.age < humans[i].age) {
+                richest = humans[i];
+            }
+        }
+
         return richest;
     }
 }

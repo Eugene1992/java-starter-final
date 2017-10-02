@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<!DOCTYPE module PUBLIC
+        "-//Puppy Crawl//DTD Check Configuration 1.3//EN"
+        "http://www.puppycrawl.com/dtds/configuration_1_3.dtd">
+
+<module name = "Checker">
+    <property name="charset" value="UTF-8"/>
+
+    <property name="severity" value="error"/>
+
+    <property name="fileExtensions" value="java, properties, xml"/>
+
+    <module name="FileTabCharacter">
+        <property name="eachLine" value="true"/>
+    </module>
+
+    <module name="TreeWalker">
+
+        <!--
+        Description:    Checks that chosen statements are not line-wrapped. By default this Check restricts
+                        wrapping import and package statements, but it's possible to check any statement.
+        Example:        Bad:  import package com.puppycrawl.
+                                        tools.checkstyle.checks;
+                        Good: import package com.puppycrawl.tools.checkstyle.checks;
+        Error messages: Statement should not be line-wrapped.
+        Doc ref:        http://checkstyle.sourceforge.net/config_whitespace.html#NoLineWrap
+        -->
+        <module name="NoLineWrap"/>
+
+        <!--
+        Description:    Checks for braces around code blocks.
+        Example:        Bad:  if (true) doSomething();
+                        Good: if (true) {
+                            doSomething();
+                        }
+        Error messages: 'if' construct must use '{}'s.
+        Doc ref:        http://checkstyle.sourceforge.net/config_blocks.html#NeedBraces
+        -->
+        <module name="NeedBraces"/>
+
+        <!--
+        Description:    Checks for the placement of left curly braces ('{') for code blocks.
+        Example:        Bad:  if (true)
+                              {
+                                doSomething();
+                              }
+                        Good: if (true) {
+                                doSomething();
+                              }
+        Error messages: '{' at column 5 should be on the previous line.
+        Doc ref:        http://checkstyle.sourceforge.net/config_blocks.html#LeftCurly
+        -->
+        <module name="LeftCurly">
+            <property name="maxLineLength" value="100"/>
+        </module>
+
+        <!--
+        Description:    Checks the placement of right curly braces ('}') for if-else, try-catch-finally blocks,
+                        while-loops, for-loops, method definitions, class definitions, constructor definitions,
+                        instance and static initialization blocks.
+        Example:        http://checkstyle.sourceforge.net/property_types.html#rcurly
+        Error messages: More then one, check Doc for more details.
+        Doc ref:        http://checkstyle.sourceforge.net/config_blocks.html#RightCurly
+        -->
+        <module name="RightCurly"/>
+
+        <!--
+        Description:    Checks that a token is surrounded by whitespace.
+        Example:        public MyClass() {}
+        Error messages: More then one, check Doc for more details.
+        Doc ref:        http://checkstyle.sourceforge.net/config_whitespace.html#WhitespaceAround
+        -->
+        <module name="WhitespaceAround">
+            <property name="allowEmptyConstructors" value="true"/>
+            <property name="allowEmptyMethods" value="false"/>
+            <property name="allowEmptyTypes" value="true"/>
+            <property name="allowEmptyLoops" value="true"/>
+            <message key="ws.notFollowed" value="WhitespaceAround: ''{0}'' is not followed by whitespace. Empty blocks may only be represented as '{}' when not part of a multi-block statement (4.1.3)"/>
+            <message key="ws.notPreceded" value="WhitespaceAround: ''{0}'' is not preceded with whitespace."/>
+        </module>
+
+        <!--
+        Description:    Checks that there is only one statement per line.
+        Example:        int var1; int var2; // fail
+        Error messages: Only one statement per line allowed.
+        Doc ref:        http://checkstyle.sourceforge.net/config_coding.html#OneStatementPerLine
+        -->
+        <module name="OneStatementPerLine"/>
+
+        <!--
+        Description:    Checks that each variable declaration is in its own statement and on its own line.
+        Example:        int var1, var2; // fail
+        Error messages: Each variable declaration must be in its own statement.
+        Doc ref:        http://checkstyle.sourceforge.net/config_coding.html#MultipleVariableDeclarations
+        -->
+        <module name="MultipleVariableDeclarations"/>
+
+        <!--
+        Description:    Checks that long constants are defined with an upper ell. That is ' L' and not 'l'.
+        Example:        long num = 10l; // fail, should be 10L
+        Error messages: Should use uppercase ''L''.
+        Doc ref:        http://checkstyle.sourceforge.net/config_misc.html#UpperEll
+        -->
+        <module name="UpperEll"/>
+
+        <!--
+        Description:    Checks for empty line separators after header, package, all import declarations, fields,
+                        constructors, methods, nested classes, static initializers and instance initializers.
+        Example:        Check Doc.
+        Error messages: More then one.
+        Doc ref:        http://checkstyle.sourceforge.net/config_whitespace.html#EmptyLineSeparator
+        -->
+        <module name="EmptyLineSeparator">
+            <property name="allowNoEmptyLineBetweenFields" value="true"/>
+        </module>
+
+        <!--
+        Description:    Checks that the whitespace around the Generic tokens (angle brackets) "<" and ">" are correct
+                        to the typical convention. The convention is not configurable.
+        Example:        Check Doc.
+        Error messages: More then one.
+        Doc ref:        http://checkstyle.sourceforge.net/config_whitespace.html#GenericWhitespace
+        -->
+        <module name="GenericWhitespace">
+            <message key="ws.followed" value="GenericWhitespace ''{0}'' is followed by whitespace."/>
+            <message key="ws.preceded" value="GenericWhitespace ''{0}'' is preceded with whitespace."/>
+            <message key="ws.illegalFollow" value="GenericWhitespace ''{0}'' should followed by whitespace."/>
+            <message key="ws.notPreceded" value="GenericWhitespace ''{0}'' is not preceded with whitespace."/>
+        </module>
+
+        <!--
+        Description:    Checks that there is no whitespace after/before a token.
+        Example:        arr[1]=2; //fail
+        Doc ref:        http://checkstyle.sourceforge.net/config_whitespace.html#NoWhitespaceAfter
+                        http://checkstyle.sourceforge.net/config_whitespace.html#NoWhitespaceBefore`
+        -->
+        <module name="NoWhitespaceAfter"/>
+        <module name="NoWhitespaceBefore"/>
+
+        <!--
+        Description:    Checks that a token is followed by whitespace.
+        Doc ref:        http://checkstyle.sourceforge.net/config_whitespace.html#WhitespaceAfter
+        -->
+        <module name="WhitespaceAfter"/>
+    </module>
+</module>

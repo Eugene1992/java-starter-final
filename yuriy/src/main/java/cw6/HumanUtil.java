@@ -9,7 +9,6 @@ public class HumanUtil {
                 richest = humans[i];
             }
         }
-        richest.salary = 10;
         return richest;
     }
 }

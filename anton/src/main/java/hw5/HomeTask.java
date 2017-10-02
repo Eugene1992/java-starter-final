@@ -7,7 +7,7 @@ public class HomeTask {
 
         int[] array1 = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
 
-        int[] array2 = {0,3,1,4,5,6,2,5,5,5,0,0,1,5,4,8,-9,-5,-1,-5,-2,6};//13
+        int[] array2 = {0, 3, 1, 4, 5, 6, 2, 5, 5, 5, 0, 0, 1, 5, 4, 8, -9, -5, -1, -5, -2, 6};
 
         print(array, 0, 1, array.length);
 
@@ -48,7 +48,7 @@ public class HomeTask {
 
         printHalfWithMin(array);
 
-        replacePartToEnd(array1, 6, 10);
+        //replacePartToEnd(array1, 6, 10);
     }
 
     static void print(int[] array, int begin, int step, int end) {
@@ -144,27 +144,57 @@ public class HomeTask {
     }
 
     //        9.Подсчитать одинаковые числа в одномерном массиве.
-    //todo
     static void sameNumbers(int[] array) {
         System.out.println("9.");
         int[] arrayBuff = array.clone();
         int counter = 0;
         int value = 0;
-        boolean flag = false;
+        boolean flagOne = false;
+        boolean flagTwo = false;
+
         for (int i = 0; i < arrayBuff.length; i++) {
             for (int j = i + 1; j < arrayBuff.length; j++) {
-                if (arrayBuff[i] == arrayBuff[j]) {
-                    if (!flag) {
-                        flag = true;
-                        value = arrayBuff[i];
+                if (arrayBuff[i] == arrayBuff[j]) {//count such same values without first
+                    if (!flagOne) {
+                        flagOne = true;
+                        value = arrayBuff[i];//save identification value
                     }
-                    if (flag) {
-                        arrayBuff[j] = value;
+                    if (flagOne) {
+                        arrayBuff[j] = value;//gives identification value for other
                     }
-                    counter++;
+                    counter++;//count such same values without first
+                    flagTwo = true;//flag for counting first same value
                 }
             }
-            print(arrayBuff, 0, 1, arrayBuff.length);
+            if (flagTwo) { //count first same value
+                counter++;
+                flagTwo = false;
+            }
+            if (counter > 0) {
+                break;
+            }
+        }
+        for (int i = 0; i < arrayBuff.length; i++) {
+            if (arrayBuff[i] == value) {
+                continue;
+            }
+            for (int j = i + 1; j < arrayBuff.length; j++) {
+                if (arrayBuff[i] == arrayBuff[j]) {//count such same values without first
+                    if (!flagOne) {
+                        flagOne = true;
+                        value = arrayBuff[i];//save identification value
+                    }
+                    if (flagOne) {
+                        arrayBuff[j] = value;//gives identification value for other
+                    }
+                    counter++;//count such same values without first
+                    flagTwo = true;//flag for counting first same value
+                }
+            }
+            if (flagTwo) { //count first same value
+                counter++;
+                flagTwo = false;
+            }
         }
         System.out.println(counter);
     }
@@ -340,17 +370,22 @@ public class HomeTask {
     //        19.Написать программу, которая перемещает в конец массива все элементы, значения которых находится в отрезке [a,b].
     // 0 1 2 3 4 5    6 7 8 9 10   11 12 13        6
     // todo
-    static void replacePartToEnd(int[] array, int begin, int end) {
-        System.out.println("19.");
-        int[] arrayBuff = array.clone();
-        int buffer;
-        int loong = arrayBuff.length;
-        int diapazon = end - begin + 1;
-        for (int i = end; i < loong; i++) {
-            buffer = arrayBuff[begin + i];
-            arrayBuff[begin + i] = arrayBuff[loong - diapazon + i];
-            arrayBuff[loong - diapazon + i] = buffer;
-        }
-        print(arrayBuff, 0, 1, arrayBuff.length);
-    }
+//    static void replacePartToEnd(int[] array, int begin, int end) {
+//        System.out.println("19.");
+//        int[] arrayBuff = array.clone();
+//        int buffer = arrayBuff[begin];
+//        int loong = arrayBuff.length;
+//        final int diapazon = end - begin + 1;
+//        rightShell = loong - 1 - end;
+//        leftShell = diapazon
+//        for (int i = begin; i < loong; i++) {
+//            if (i <= end) {
+//
+//            } else {
+//
+//                shell -> diapazon;
+//            }
+//        }
+//        print(arrayBuff, 0, 1, arrayBuff.length);
+//    }
 }

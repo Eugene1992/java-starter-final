@@ -2,10 +2,7 @@ package cw07;
 
 public class Test {
     public static void main(String[] args) {
-        Human h1 = new Human();
-        h1.age = 22;
-        h1.name = "Alex";
-        h1.salary = 500;
+        Human h1 = new Human("Alex", 22, 500);
 
         Human h2 = new Human();
         h2.age = 23;
@@ -19,12 +16,11 @@ public class Test {
 
         Human[] humans = {h1, h2, h3};
 
-        Human richestEmployee = getRichestEmployee(humans);
+//        System.out.println(richestEmployee.name);
 
-        System.out.println(richestEmployee.name);
+        h1.sayHello();
+        h2.sayHello();
     }
 
-    static Human getRichestEmployee(Human[] humans) {
-        return null;
-    }
+
 }

@@ -1,4 +1,4 @@
-package cw07;
+package cw6;
 
 public class Human {
     public String name;

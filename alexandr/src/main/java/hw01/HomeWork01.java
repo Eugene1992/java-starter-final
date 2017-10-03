@@ -1,7 +1,7 @@
 package hw01;
 
 public class HomeWork01 {
-    public static void main(String args[]){
+    public static void main(String args[]) {
 
 //        Создать четыре целочисленные переменные типов byte, short, int, long.
 
@@ -39,12 +39,12 @@ public class HomeWork01 {
         short s2 = 10;
         byte s3 = 3;
         byte bsum;
-        bsum = (byte) ((s1 + s2)/s3);
+        bsum = (byte) ((s1 + s2) / s3);
 
 //        Переменной типа int передать результат деления двух short, умноженных на результат деления двух byte
 
         int csum;
-        csum = (s2/s1)*(bsum/asum);
+        csum = (s2 / s1) * (bsum / asum);
 
 //        Поменять значения двух целочисленных переменных используя третью
 

@@ -29,7 +29,7 @@ public class ClassWork06 {
     static Human getRichestHuman(Human[] humans) {
         Human testHuman = humans[0];
         for (int i = 0; i < humans.length; i++) {
-            if (testHuman.salary <= humans[i].salary){
+            if (testHuman.salary <= humans[i].salary) {
                 testHuman = humans[i];
             }
         }

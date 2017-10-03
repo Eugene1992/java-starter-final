@@ -7,14 +7,14 @@ public class ClassWork03 {
         int beginOfInterval = scan.nextInt();
         System.out.println("Enter the ending of interval");
         int endOfInterval = scan.nextInt();
-        System.out.println(sumOfInterval(beginOfInterval,endOfInterval));
+        System.out.println(sumOfInterval(beginOfInterval, endOfInterval));
 
     }
 
-    static int sumOfInterval (int startInterval, int endInterval) {
+    static int sumOfInterval(int startInterval, int endInterval) {
         int sum = 0;
         for (int i = startInterval; i <= endInterval; i++) {
-           sum+=i; 
+            sum += i;
         }
         return sum;
     }

@@ -14,7 +14,7 @@ public class GuessNumber {
             Scanner scan = new Scanner(System.in);
             String s = scan.next();
 
-            if ( s.equals("exit") ){
+            if (s.equals("exit")) {
                 break;
             }
 
@@ -23,7 +23,7 @@ public class GuessNumber {
 
             if (x < randomInt) {
                 System.out.println("My Number is bigger!");
-            } else if (x > randomInt){
+            } else if (x > randomInt) {
                 System.out.println("My Number is lower!");
             } else {
                 f = false;

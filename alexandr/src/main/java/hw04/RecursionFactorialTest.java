@@ -1,3 +1,5 @@
+package hw04;
+
 import java.util.Scanner;
 
 public class RecursionFactorialTest {

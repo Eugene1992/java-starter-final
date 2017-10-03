@@ -1,3 +1,5 @@
+package hw03;
+
 public class CalculatePalindromsInInterval {
     public static void main(String[] args) {
         System.out.println(palindromOk(123321));

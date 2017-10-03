@@ -32,7 +32,7 @@ public class HomeTask {
 
         reverseMinMax(array);
 
-        inersionOfArr(array);
+        inversionOfArr(array);
 
         biggerAveradge(array);
 
@@ -48,7 +48,7 @@ public class HomeTask {
 
         printHalfWithMin(array);
 
-        //replacePartToEnd(array1, 6, 10);
+        replacePartToEnd(array1, 6, 10);
     }
 
     static void print(int[] array, int begin, int step, int end) {
@@ -80,8 +80,8 @@ public class HomeTask {
 
     //        2.Вывести все числа одномерного массива в обратном порядке.
     static void reverseArr(int[] array) {
-//        System.out.println("1.");
-//        print(array, array.length - 1, -1, -1);
+        System.out.println("1.");
+        reversePrint(array, array.length - 1, 1, -1);
     }
 
     //        3.Вывести первую и вторую половину одномерного массива.
@@ -225,7 +225,7 @@ public class HomeTask {
     }
 
     //        11.Инвертировать массив.
-    static void inersionOfArr(int[] array) {
+    static void inversionOfArr(int[] array) {
         System.out.println("11.");
         int[] arrayBuff = array.clone();
         int buffer;
@@ -368,24 +368,24 @@ public class HomeTask {
     }
 
     //        19.Написать программу, которая перемещает в конец массива все элементы, значения которых находится в отрезке [a,b].
-    // 0 1 2 3 4 5    6 7 8 9 10   11 12 13        6
-    // todo
-//    static void replacePartToEnd(int[] array, int begin, int end) {
-//        System.out.println("19.");
-//        int[] arrayBuff = array.clone();
-//        int buffer = arrayBuff[begin];
-//        int loong = arrayBuff.length;
-//        final int diapazon = end - begin + 1;
-//        rightShell = loong - 1 - end;
-//        leftShell = diapazon
-//        for (int i = begin; i < loong; i++) {
-//            if (i <= end) {
-//
-//            } else {
-//
-//                shell -> diapazon;
-//            }
-//        }
-//        print(arrayBuff, 0, 1, arrayBuff.length);
-//    }
+    static void replacePartToEnd(int[] array, int begin, int end) {
+        System.out.println("19.");
+        int[] arrayBuff = array.clone();
+        int diapazon = end - begin + 1;
+        int loong = arrayBuff.length;
+
+        int[] arrayChange = new int[diapazon];
+
+        for (int i = begin; i <= end; i++) {
+            arrayChange[i - begin] = arrayBuff[i];
+        }
+
+        for (int i = end + 1; i < loong; i++) {
+            arrayBuff[i - diapazon] = arrayBuff[i];
+        }
+        for (int i = diapazon - 1; i >= 0; i--) {
+            arrayBuff[loong - 1 - i] = arrayChange[diapazon - 1 - i];
+        }
+        print(arrayBuff, 0, 1, arrayBuff.length);
+    }
 }

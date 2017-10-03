@@ -15,8 +15,6 @@ import java.util.Scanner;
             на экран результат.
 */
 
-
-
 public class Translater {
     public static void main(String[] args) {
 

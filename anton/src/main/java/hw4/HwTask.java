@@ -64,7 +64,7 @@ public class HwTask {
                         if (i == l && j == k) {
                             count++;
                             if (chooseToPrint == 1) {
-                                System.out.print((i * 10 + j + ":" + k  + l + " "));
+                                System.out.print((i * 10 + j + ":" + k + l + " "));
                             }
                             if (count % 10 == 0 && chooseToPrint == 1) {
                                 System.out.println("");

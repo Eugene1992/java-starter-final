@@ -9,7 +9,6 @@ public class FromDecimalToBinaryFor {
         int value1;
 
 
-
 //        do {
 //            num1 = number / 2;
 //            value1 = num1 % 2;

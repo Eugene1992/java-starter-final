@@ -12,7 +12,7 @@ public class TernaryTest {
         }
 
 //              condition ? if true : if false;
-        int c = a > 0     ?    1    :     0   ;
+        int c = a > 0 ? 1 : 0;
 
 
         System.out.println(b);

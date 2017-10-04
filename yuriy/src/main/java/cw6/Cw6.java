@@ -1,6 +1,6 @@
 package cw6;
 
-public class cw6 {
+class cw6 {
     public static void main(String[] args) {
         String string = "Hello world";
         String str1 = "YPlus";

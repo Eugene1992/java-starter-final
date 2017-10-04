@@ -5,7 +5,7 @@ public class DoWhileTest {
         int count = 0;
         do {
             System.out.println(count);
-            count++; // count = count + 1; || count += 1;
+            count++; // COUNT = COUNT + 1; || COUNT += 1;
         } while (count > 10);
     }
 }

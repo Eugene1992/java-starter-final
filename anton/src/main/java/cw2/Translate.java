@@ -3,7 +3,13 @@ package cw2;
 public class Translate {
     public static void main(String[] argz) {
         int a = 127;
-        byte roz1, roz2, roz3, roz4, roz5, roz6, roz7;
+        byte roz1;
+        byte roz2;
+        byte roz3;
+        byte roz4;
+        byte roz5;
+        byte roz6;
+        byte roz7;
 
         roz1 = (byte) (a % 2);
         a = a / 2;

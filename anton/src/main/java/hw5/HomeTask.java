@@ -154,16 +154,16 @@ public class HomeTask {
 
         for (int i = 0; i < arrayBuff.length; i++) {
             for (int j = i + 1; j < arrayBuff.length; j++) {
-                if (arrayBuff[i] == arrayBuff[j]) {//count such same values without first
+                if (arrayBuff[i] == arrayBuff[j]) { //count such same values without first
                     if (!flagOne) {
                         flagOne = true;
-                        value = arrayBuff[i];//save identification value
+                        value = arrayBuff[i]; //save identification value
                     }
                     if (flagOne) {
-                        arrayBuff[j] = value;//gives identification value for other
+                        arrayBuff[j] = value; //gives identification value for other
                     }
-                    counter++;//count such same values without first
-                    flagTwo = true;//flag for counting first same value
+                    counter++; //count such same values without first
+                    flagTwo = true; //flag for counting first same value
                 }
             }
             if (flagTwo) { //count first same value
@@ -179,16 +179,16 @@ public class HomeTask {
                 continue;
             }
             for (int j = i + 1; j < arrayBuff.length; j++) {
-                if (arrayBuff[i] == arrayBuff[j]) {//count such same values without first
+                if (arrayBuff[i] == arrayBuff[j]) { //count such same values without first
                     if (!flagOne) {
                         flagOne = true;
-                        value = arrayBuff[i];//save identification value
+                        value = arrayBuff[i]; //save identification value
                     }
                     if (flagOne) {
-                        arrayBuff[j] = value;//gives identification value for other
+                        arrayBuff[j] = value; //gives identification value for other
                     }
-                    counter++;//count such same values without first
-                    flagTwo = true;//flag for counting first same value
+                    counter++; //count such same values without first
+                    flagTwo = true; //flag for counting first same value
                 }
             }
             if (flagTwo) { //count first same value
@@ -353,8 +353,9 @@ public class HomeTask {
             if (firstHalfMin > array[i]) {
                 firstHalfMin = array[i];
             }
-            if (secondHalfMin > array[array.length - 1 - i])
+            if (secondHalfMin > array[array.length - 1 - i]) {
                 secondHalfMin = array[array.length - 1 - i];
+            }
         }
         if (array.length % 2 == 0) {
             arrayIsUnpared = 0;

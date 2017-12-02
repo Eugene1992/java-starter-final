@@ -13,8 +13,8 @@ public class DividerTest {
         System.out.println("Enter your number");
         int x = scan.nextInt();
         System.out.println("Все положительные делители натурального числа, введенного пользователем.");
-        for (int i =1; i <= x; i++) {
-            if (x % i == 0 ) {
+        for (int i = 1; i <= x; i++) {
+            if (x % i == 0) {
                 System.out.print(i + " ");
             }
         }

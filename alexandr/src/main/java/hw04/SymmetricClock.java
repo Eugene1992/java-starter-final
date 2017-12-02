@@ -10,7 +10,7 @@ public class SymmetricClock {
         System.out.println(symmetricClockNumber());
     }
 
-    static int symmetricClockNumber (){
+    static int symmetricClockNumber() {
         int k = 0;
         String stringHours;
         String stringMinutes;
@@ -29,9 +29,9 @@ public class SymmetricClock {
                 switchSymbol1 = stringMinutes.charAt(0);
                 switchSymbol2 = stringMinutes.charAt(1);
                 stringMinutes = "" + switchSymbol2 + switchSymbol1;
-                if (stringHours.equals(stringMinutes)){
+                if (stringHours.equals(stringMinutes)) {
                     k++;
-                    System.out.println(stringHours + ":" + switchSymbol1 +switchSymbol2);
+                    System.out.println(stringHours + ":" + switchSymbol1 + switchSymbol2);
                 }
             }
         }

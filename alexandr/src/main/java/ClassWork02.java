@@ -6,7 +6,7 @@ public class ClassWork02 {
         String s = "";
         while (x != 0) {
 
-            if ( k % 4 == 0 ) {
+            if (k % 4 == 0) {
                 s = " " + s;
             }
 

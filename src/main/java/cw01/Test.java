@@ -10,7 +10,7 @@ public class Test {
 //        Ctrl + Shift + Enter auto complete
         byte a;
         byte b = 10; // -128 ... 127
-        byte c = 7, d, e = 10;
+//        byte c = 7, d, e = 10;
 
         boolean b1 = true;
         boolean b2 = false;

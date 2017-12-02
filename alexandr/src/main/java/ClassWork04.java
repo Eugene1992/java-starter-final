@@ -35,7 +35,9 @@ public class ClassWork04 {
                 sumSecondHalf += array[i];
             }
         }
-        if (array.length % 2 == 1) sumFirstHalf += array[array.length / 2];
+        if (array.length % 2 == 1) {
+            sumFirstHalf += array[array.length / 2];
+        }
 
         if (sumFirstHalf / (array.length / 2) >= sumSecondHalf / (array.length / 2)) {
             for (int i = array.length / 2; i >= 0; i--) {

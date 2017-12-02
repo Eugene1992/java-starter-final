@@ -10,8 +10,10 @@ public class RecursionFactorialTest {
         System.out.println(factorialOfNumber(factorialNumber));
     }
 
-    static int factorialOfNumber (int number){
-        if (number <= 1) return 1;
-        return number*factorialOfNumber(number-1);
+    static int factorialOfNumber(int number) {
+        if (number <= 1) {
+            return 1;
+        }
+        return number * factorialOfNumber(number - 1);
     }
 }

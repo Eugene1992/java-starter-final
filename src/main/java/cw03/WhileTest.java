@@ -5,7 +5,7 @@ public class WhileTest {
         int count = 0;
         while (count < 10 && count != 5) {
             System.out.println(count);
-            count++; // count = count + 1; || count += 1;
+            count++; // COUNT = COUNT + 1; || COUNT += 1;
         }
     }
 }

@@ -1,10 +1,10 @@
 package cw6;
 
-class cw6 {
+public class Cw6 {
     public static void main(String[] args) {
         String string = "Hello world";
         String str1 = "YPlus";
-        String startWith = "Hell";
+        String startWith = "Hell";<<<<<<< yr_hw7
         String endWith = "rld";
         int firstNumberOfChar = 1;
 
@@ -18,14 +18,13 @@ class cw6 {
 
         // start with
         System.out.println("Start with:");
+
         startwith(string, startWith, firstNumberOfChar);
 
         // end with
         System.out.println("End with:");
         endWith(string, endWith);
-
     }
-
     // substring string
     static void subFrom(String string, int from) {
         char chararray[] = string.toCharArray();
@@ -75,13 +74,10 @@ class cw6 {
                     return true;
                 }
             }
-
         }
         return false;
     }
 
-    // ????????????????????????????????????????????????????????????????????????
-    // end with
     static boolean endWith(String ourString, String wordsFromEnd) {
         char[] charArrayFromString = ourString.toCharArray();
         char[] charArrayFromEnd = wordsFromEnd.toCharArray();

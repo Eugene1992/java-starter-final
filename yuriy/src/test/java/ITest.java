@@ -1,4 +1,3 @@
-
 import cw6.Human;
 import cw6.HumanUtil;
 import org.junit.Assert;

@@ -2,10 +2,9 @@ package cw6;
 
 public class Cw6 {
     public static void main(String[] args) {
-
         String string = "Hello world";
         String str1 = "YPlus";
-        String startWith = "Hell";
+        String startWith = "Hell";<<<<<<< yr_hw7
         String endWith = "rld";
         int firstNumberOfChar = 1;
 
@@ -19,15 +18,13 @@ public class Cw6 {
 
         // start with
         System.out.println("Start with:");
-        startwith(string,startWith,firstNumberOfChar);
 
-//        // end with
-//        System.out.println("End with:");
-//        endWith(string, endWith);
+        startwith(string, startWith, firstNumberOfChar);
 
+        // end with
+        System.out.println("End with:");
+        endWith(string, endWith);
     }
-
-
     // substring string
     static void subFrom(String string, int from) {
         char chararray[] = string.toCharArray();
@@ -72,26 +69,22 @@ public class Cw6 {
         // comparison of 2 char arrays
         for (int i = 0; i < arrayForFirstWord.length; i++) {
             for (int j = 0; j < arrayForFullwordFromCharacrer.length; j++) {
-                if(arrayForFirstWord[i] == arrayForFullwordFromCharacrer[i] || arrayForFirstWord[j] == arrayForFullwordFromCharacrer[j]){
+                if (arrayForFirstWord[i] == arrayForFullwordFromCharacrer[i] || arrayForFirstWord[j] == arrayForFullwordFromCharacrer[j]) {
                     System.out.println("true");
                     return true;
                 }
             }
-
         }
         return false;
     }
 
-    // ????????????????????????????????????????????????????????????????????????
-    // end with
-    static boolean endWith(String ourString, String wordsFromEnd){
+    static boolean endWith(String ourString, String wordsFromEnd) {
         char[] charArrayFromString = ourString.toCharArray();
         char[] charArrayFromEnd = wordsFromEnd.toCharArray();
-
         char[] arrayString = new char[100500];
         char[] arrayEnd = new char[100500];
 
-        for (int i = charArrayFromString.length ; i > 0 ; --i) {
+        for (int i = charArrayFromString.length; i > 0; --i) {
             charArrayFromString[i] = arrayString[i];
         }
 
@@ -99,9 +92,9 @@ public class Cw6 {
             charArrayFromEnd[i] = charArrayFromEnd[i];
         }
 
-        for (int i = arrayString.length ; i > 0 ; --i) {
+        for (int i = arrayString.length; i > 0; --i) {
             for (int j = arrayEnd.length; j > 0; --j) {
-                if(arrayString[i] == arrayEnd[i] || arrayString[j] == arrayEnd[j]){
+                if (arrayString[i] == arrayEnd[i] || arrayString[j] == arrayEnd[j]) {
                     System.out.println("true");
                     return true;
                 }
@@ -110,5 +103,4 @@ public class Cw6 {
         System.out.println("false");
         return false;
     }
-
 }

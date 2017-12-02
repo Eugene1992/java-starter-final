@@ -58,10 +58,10 @@ public class Hw5 {
         summOfElementsBetweenMaxAndMinElements(intArray);
 
         // Вывести в консоль половину массива в которой находиться наименьшее число массива.
-
+        halfOfArrayWhereIsASmallerNumber(intArray);
 
         // Написать программу, которая перемещает в конец массива все элементы, значения которых находится в отрезке [a,b].
-
+        fromAToBToTheEnd(intArray);
     }
 
     // Вывести в консоль все парные числа одномерного массива.
@@ -204,6 +204,7 @@ public class Hw5 {
 
     // Вывести в консоль половину массива, среднеарифметическое которых является большим.
     private static void thisHalfOfArrayIsBigger(int[] array) {
+
 //       Second part
         int firstAverage = 0;
         int secondAverage = 0;
@@ -228,6 +229,7 @@ public class Hw5 {
 
     // Найти сумму отрицательных чисел в одномерном массиве.
     private static void calcSummOfNegativeNumbers(int[] array) {
+        System.out.println("Найти сумму отрицательных чисел в одномерном массиве.");
         int summOfNegativeNumbers = 0;
         for (int i = 0; i < array.length; i++) {
             if (array[i] < 0) {
@@ -252,6 +254,7 @@ public class Hw5 {
     // ?????????????????????????????????????????????????????????????
     // Написать программу, меняющую местами два наибольших элемента одномерного массива с первым и последним.
     private static void makesTwoBiggestNumbersFiestAndLatestElements(int[] array) {
+        System.out.println("Написать программу, меняющую местами два наибольших элемента одномерного массива с первым и последним.");
 
     }
 
@@ -311,8 +314,14 @@ public class Hw5 {
     }
 
     // Вывести в консоль половину массива в которой находиться наименьшее число массива.
+    private static void halfOfArrayWhereIsASmallerNumber(int[] array) {
+        System.out.println("Вывести в консоль половину массива в которой находиться наименьшее число массива.");
 
+    }
 
     // Написать программу, которая перемещает в конец массива все элементы, значения которых находится в отрезке [a,b].
+    private static void fromAToBToTheEnd(int[] array) {
+        System.out.println("Написать программу, которая перемещает в конец массива все элементы, значения которых находится в отрезке [a,b].");
 
+    }
 }

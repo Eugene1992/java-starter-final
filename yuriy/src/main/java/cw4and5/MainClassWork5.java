@@ -45,7 +45,7 @@ public class MainClassWork5 {
     //5.3 Вывести в консоль половину массива, среднеарифметическое которых является большим
 
     //5.4
-    private static void calcaLenthOfOutOfElementsInArray(){
+    private static void calcaLenthOfOutOfElementsInArray() {
         Random random = new Random();
         double[][] array2 = new double[4][5];
 
@@ -57,7 +57,6 @@ public class MainClassWork5 {
             }
         }
         System.out.println(array2);
-
 
 
     }

@@ -3,6 +3,7 @@ package cw4and5;
 public class MainClassWork4 {
     /**
      * https://habrahabr.ru/post/275813/
+     *
      * @param args
      */
 
@@ -24,14 +25,14 @@ public class MainClassWork4 {
 //    }
 
     // 4.2 Рекурсия числв за прикладом
-    static void recursion (int usersNumber) {
+    static void recursion(int usersNumber) {
 
     }
 
 
     // 4.3 Знайти всы числа полындроми в числы 999999 (коли 101101)
 
-    static void polindrom (int n) {
+    static void polindrom(int n) {
 
     }
 
